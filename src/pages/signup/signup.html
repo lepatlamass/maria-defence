@@ -1,0 +1,48 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content class=" no-scroll" padding>
+
+  <h1 class="title">SIGN UP</h1>
+  
+  <div>
+    <ion-list class="list" insert>
+  
+      <ion-item class="label">
+        <ion-label color="mywhite" style="font-size:12px" stacked>Username</ion-label>
+        <ion-input type="text" aria-placeholder="username" placeholder="Enter username  / Email"></ion-input>
+      </ion-item>
+
+      <ion-item class="label">
+        <ion-label color="mywhite" style="font-size:12px" stacked>Email</ion-label>
+        <ion-input type="Email" aria-placeholder="username" [(ngModel)]="user.email" placeholder="Enter Email"></ion-input>
+      </ion-item>
+  
+      <ion-item class="label">
+        <ion-label color="mywhite" style="font-size:12px" stacked>Password</ion-label>
+        <ion-input color="mywhite" type="Password" aria-placeholder="username" [(ngModel)]="user.password" placeholder="Enter Password"></ion-input>
+      </ion-item>
+
+      <ion-item class="label">
+        <ion-label color="mywhite" style="font-size:12px" stacked>Confirm Password</ion-label>
+        <ion-input color="mywhite" type="Password" aria-placeholder="username" placeholder="Enter Password"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+  </div>
+  
+  <p class="text" style="font-family:open-sans; font-size: 14px; ">Forgot Password</p>
+  
+  <div text-center>
+    <button class="btnWidth" ion-button color="primary" (click)="register(user)">Create Account</button>
+  </div>
+  <div text-center>
+    <button class="myButton" ion-button color="primary" outline [navPush]="nextPages">SIGN IN</button>
+  </div>
+</ion-content>

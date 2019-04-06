@@ -1,0 +1,29 @@
+page-login {
+    .title {
+        padding-top: 4em;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Baloobhai';
+        color: black;
+    }
+    .no-scroll .scroll-contain {
+        overflow: none;
+    } 
+    .list {
+        position: abolute;
+        overflow: none;
+    }
+    .text {
+        text-align: center; // margin-top: 25vh;
+        color: gray;
+    }
+    .btnWidth {
+        margin-bottom: 3em;
+        width: 58%;
+    }
+    .myButton {
+        // margin-top: 8vh;
+        width: 74%;
+    }
+}

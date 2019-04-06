@@ -1,17 +1,37 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar [color]="isAndroid ? 'royal' : 'primary'">
     <ion-title>
-      Contact
+     Contact
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <ion-card>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8473841697396!2d9.71694586526803!3d4.051534347053819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061127e23de08af%3A0xa186aa3d58fe18d6!2sNGUETI+IT+SOLUTIONS%2C+NAMSOFT!5e0!3m2!1sen!2scm!4v1547879044215"
+      width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <ion-item>
+        <ion-icon name="md-code-working" item-start large></ion-icon>
+        <h2>NGUETI IT SOLUTIONS</h2>
+        <p>Rte de Bepanda, Douala</p>
+      </ion-item>
+  </ion-card>
+ <div style="font-family:Open-sans; margin:10px; " class="social">
+    <h3 >Social Medias</h3>
+    <img src="assets/img/fbk.png" alt="facebook ngueti">
+    <img src="assets/img/twt.png" alt="facebook ngueti">
+    <img src="assets/img/int.png" alt="facebook ngueti">
+    <img src="assets/img/lnd.png" alt="facebook ngueti"> 
+ </div>
+<h3 style="font-family:Open-sans; margin:10px;">Messages assistance</h3>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-icon name="md-mail" item-start></ion-icon>
+      Contact@ngueti.com
+    </ion-item>
+    <ion-item>
+      <ion-icon name="md-call" item-start></ion-icon>
+      237 600 000 00
     </ion-item>
   </ion-list>
 </ion-content>

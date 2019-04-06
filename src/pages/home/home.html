@@ -1,17 +1,13 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-header>
+    <ion-navbar [color]="isAndroid ? 'royal' : 'primary'">
+        <ion-title>
+            Services
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content >
+    <img style="display: block" src="assets/img/service-1.png" (click)="playEnterprise()">
+    <img style="display: block" src="assets/img/service-2.png" (click)="playMicrosoft()">
+     <img style="display: block" src="assets/img/service-3.png" (click)="playPreparation()">
 </ion-content>
